@@ -1,0 +1,21 @@
+
+
+
+$color1: #066938;
+$color2: #eb3499;
+
+
+
+form{
+    background-color: gray!important;
+	width: 500px;
+	margin: auto;
+	input{
+		padding: 10px;
+		border-radius: 10px;
+		width: 10%;
+	}
+	button{
+		background: $color2;
+	}
+}
