@@ -10,8 +10,8 @@
 <?= $this->Form->control('picture', ['placeholder' => '', 'type' => 'file']) ?>
 
 
-<?=  $this->Form->select('visibility', [1, 2], ['empty' => '(visibility)']);
-?>
+<?=  $this->Form->select('visibility', ['checkbox' => ['Privé', 'Public']]) ;?>
+
 
 
 	<?= $this->Form->button('Ajouter') ?>

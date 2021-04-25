@@ -71,7 +71,7 @@ $cakeDescription = 'Ma liste';
             <?php else : ?>
 
 
-                <?= $this->Html->link('Mes listes', ['controller'=>'Todolists', 'action' => 'index'], ['class' => ($this->templatePath == 'TodolistsTable' && $this->template == 'index') ? 'active' : '' ]) ?>
+                <?= $this->Html->link('Les listes', ['controller'=>'Todolists', 'action' => 'index'], ['class' => ($this->templatePath == 'TodolistsTable' && $this->template == 'index') ? 'active' : '' ]) ?>
 
 
 

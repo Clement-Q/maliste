@@ -19,11 +19,4 @@
 </table>
 
 
-<?php foreach ($user->users as $username): ?>
-    <div class="comm">
-        <p class="meta">
-            <?= $comm->user->name ?>, le <?= $comm->created ?>
-        </p>
-        <p><?= $comm->content ?></p>
-    </div>
-<?php endforeach;
+

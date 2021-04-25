@@ -5,18 +5,28 @@ namespace App\Controller;
 class ItemsController extends AppController{
 
 
-	public function new(){
 
-		$new = $this->Comments->newEmptyEntity();
+public function view(){
+
+
+
+    $this->loadModel('Items');
+
+$new = $this->Items->newEmptyEntity();
 		if($this->request->is('post')){
-			$new = $this->Comments->patchEntity($new, $this->request->getData());
-			$new->user_id = $this->request->getAttribute('id')->id;
-			if($this->Comments->save($new)){
-				$this->Flash->success('Saved');
-			}else{
-				$this->Flash->error('Try again');
-			}
-		}
-		return $this->redirect(['controller' => 'Todolists', 'action' => 'index', '#' => 'index'.$new->picture_id]);
+
+            $new = $this->Items->patchEntity($new, $this->request->getData());
+            $new->user_id = $this->request->getAttribute('identity')->id;
+            if($this->Items->save($new)){
+                $this->Flash->success('Saved');
+            }else{
+                $this->Flash->error('Try again');
+            }
+        }
+	//	return $this->redirect(['controller' => 'Pictures', 'action' => 'index', '#' => 'picture'.$new->picture_id]);
 	}
+
 }
+
+
+

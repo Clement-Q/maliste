@@ -14,5 +14,19 @@
 
 <p>
     <?= $this->Html->link('Edit', ['action' => 'edit', $todolist->title]); ?>
-
 </p>
+
+
+<?= ($todolist->content); ?>
+
+<?php
+echo $this->Form->create($todolist);
+echo $this->Form->control('content', ['label' => 'Ajouter une note à votre liste']);
+echo $this->Form->button('Commenter');
+echo $this->Form->end();
+?>
+
+
+
+
+

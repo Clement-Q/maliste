@@ -1,13 +1,17 @@
-<div class="center">
 
-<h1>Modifier mon compte</h1>
+<h1 class="center">Modifier mon compte</h1>
+
+<div class="row">
+    <div class="column center">
 
 <?= @$this->Html->image('data/pictures/'.$profil->avatar, ['style'=>'max-width:70%;obcject-fit:none;border-radius:12px']) ?>
 
+    </div>
 
-    <h1>Coucou <?= h($profil->username) ?></h1>
-    <p>Vous disposer de  liste</p>
-    <?= count($profil->username)?>
+<div class="column center">
+    <h1>Bonjour <?= h($profil->username) ?></h1>
+    <p>Vous disposer de 1 liste</p>
+
 
 
 <?= $this->Form->create($profil, ['enctype' => 'multipart/form-data']) ?>
@@ -24,7 +28,6 @@
     Crée le <?= h($profil->created) ?>
     <p><?= $this->Form->postLink('Supprimer mon compte', ['controller' => 'Users', 'action' => 'delete', $profil->id], ['confirm' => 'Etes-vous sûr de vouloir supprimer votre compte?']) ?></p>
 </small>
-
 
 
 </div>

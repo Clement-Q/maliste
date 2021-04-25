@@ -1,14 +1,18 @@
 <section>
     <div class="row">
         <div class="column">
-            <h4>Accueil</h4>
+
+            <h1>Comme un reseau social mais pour vos notes !</h1>
+            <p>Ma liste vous permet de noter et stocker vos notes, vous pouvez copier ceux des autres utilisateurs et même si vous le souhaiter contacter la personne qui la crée!</p>
+            <p>Le total des utilisateurs incrit est de</p>
 
         </div>
+
+
+
         <div class="column">
-            <ul>
+            <img alt="" src="/webroot/img/copie.svg"/>
 
-
-            </ul>
         </div>
 </section>
 
